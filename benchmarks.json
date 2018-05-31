@@ -1,6 +1,6 @@
 {
     "henselizations.Rational.time_create": {
-        "code": "def time_create(self):\n    Henselization(QQ, QQ.valuation(2))\n", 
+        "code": "def time_create(self):\n    QQ.henselization(2)\n", 
         "goal_time": 2.0, 
         "name": "henselizations.Rational.time_create", 
         "number": 0, 

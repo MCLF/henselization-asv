@@ -21,7 +21,7 @@
         "params": [], 
         "pretty_name": "splitting_fields.SplittingField.time_12_384", 
         "repeat": 0, 
-        "timeout": 60.0, 
+        "timeout": 1800, 
         "type": "time", 
         "unit": "seconds"
     }, 

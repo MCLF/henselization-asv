@@ -25,5 +25,18 @@
         "type": "time", 
         "unit": "seconds"
     }, 
+    "splitting_fields.SplittingField.time_6_8": {
+        "code": "def time_6_8(self):\n    r\"\"\"\n    TESTS::\n\n        sage: import henselization\n        sage: from henselization.benchmarks.splitting_fields import SplittingField\n        sage: SplittingField().time_6_8()\n        Factoring T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 14 over a field of degree 1 * 1\u2026\n        \u2026factors with degrees [4, 1, 1]\n        Found totally ramified part of degree 4\n        Factoring T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 14 over a field of degree 1 * 4\u2026\n        \u2026factors with degrees [2, 1, 1, 1, 1]\n        Found totally ramified part of degree 2\n        Factoring T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 14 over a field of degree 1 * 8\u2026\n        \u2026factors with degrees [1, 1, 1, 1, 1, 1]\n\n    \"\"\"\n    K = QQ.henselization(2)\n    R = PolynomialRing(K, 'T')\n    T = R.gen()\n    f = T**6 + 168*T**5 - 209*T**4 + 52*T**3 + 26*T**2 + 8*T - 14\n    splitting_field(f)\n", 
+        "goal_time": 2.0, 
+        "name": "splitting_fields.SplittingField.time_6_8", 
+        "number": 0, 
+        "param_names": [], 
+        "params": [], 
+        "pretty_name": "splitting_fields.SplittingField.time_6_8", 
+        "repeat": 0, 
+        "timeout": 1800, 
+        "type": "time", 
+        "unit": "seconds"
+    }, 
     "version": 1
 }

@@ -1,0 +1,32 @@
+{
+    "commit_hash": "fcea4491e0e9cd49522736eafc3aa97d55613cf7", 
+    "date": 1531403086000, 
+    "ended_at": {
+        "henselizations.Rational.time_create": 1531403166000, 
+        "splitting_fields.SplittingField.time_12_384": 1531404669000, 
+        "splitting_fields.SplittingField.time_6_8": 1531404675000
+    }, 
+    "env_name": "sage-py_home_sage_sage_local_bin_python", 
+    "params": {
+        "arch": "x86_64", 
+        "cpu": "Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz or similar", 
+        "machine": "CircleCI", 
+        "os": "Linux", 
+        "python": "2.7", 
+        "ram": "61830880"
+    }, 
+    "profiles": {}, 
+    "python": "2.7", 
+    "requirements": {}, 
+    "results": {
+        "henselizations.Rational.time_create": 3.943492600000002e-05, 
+        "splitting_fields.SplittingField.time_12_384": 1500.922518586, 
+        "splitting_fields.SplittingField.time_6_8": 0.7002057699999997
+    }, 
+    "started_at": {
+        "henselizations.Rational.time_create": 1531403163000, 
+        "splitting_fields.SplittingField.time_12_384": 1531403166000, 
+        "splitting_fields.SplittingField.time_6_8": 1531404669000
+    }, 
+    "version": 1
+}

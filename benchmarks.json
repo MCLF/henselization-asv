@@ -12,6 +12,19 @@
         "type": "time", 
         "unit": "seconds"
     }, 
+    "splitting_fields.SplittingField.time_10_": {
+        "code": "def time_10_(self):\n    r\"\"\"\n    TESTS::\n\n        sage: import henselization\n        sage: from henselization.benchmarks.splitting_fields import SplittingField\n        sage: SplittingField().time_6_8()\n        Factoring T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 14 over a field of degree 1 * 1\u2026\n        \u2026factors with degrees [4, 1, 1]\n        Found totally ramified part of degree 4\n        Factoring T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 14 over a field of degree 1 * 4\u2026\n        \u2026factors with degrees [2, 1, 1, 1, 1]\n        Found totally ramified part of degree 2\n        Factoring T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 14 over a field of degree 1 * 8\u2026\n        \u2026factors with degrees [1, 1, 1, 1, 1, 1]\n\n    \"\"\"\n    K = QQ.henselization(2)\n    R = PolynomialRing(K, 'T')\n    T = R.gen()\n    f = T**10 + T**6 + 168*T**5 - 209*T**4 + 52*T**3 + 26*T**2 + 8*T - 14\n    splitting_field(f)\n", 
+        "goal_time": 2.0, 
+        "name": "splitting_fields.SplittingField.time_10_", 
+        "number": 0, 
+        "param_names": [], 
+        "params": [], 
+        "pretty_name": "splitting_fields.SplittingField.time_10_", 
+        "repeat": 0, 
+        "timeout": 1800, 
+        "type": "time", 
+        "unit": "seconds"
+    }, 
     "splitting_fields.SplittingField.time_12_384": {
         "code": "def time_12_384(self):\n    r\"\"\"\n    TESTS::\n\n        sage: import henselization\n        sage: from henselization.benchmarks.splitting_fields import SplittingField\n        sage: SplittingField().time_12_384() # long time\n        Factoring T^12 - 4*T^11 + 2*T^10 + 13*T^8 - 16*T^7 - 36*T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 13 over a field of degree 1 * 1\u2026\n        \u2026factors with degrees [12]\n        Found totally ramified part of degree 12\n        Factoring T^12 - 4*T^11 + 2*T^10 + 13*T^8 - 16*T^7 - 36*T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 13 over a field of degree 1 * 12\u2026\n        \u2026factors with degrees [8, 2, 1, 1]\n        Found unramified part of degree 2\n        Factoring T^12 - 4*T^11 + 2*T^10 + 13*T^8 - 16*T^7 - 36*T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 13 over a field of degree 2 * 1\u2026\n        \u2026factors with degrees [12]\n        Found totally ramified part of degree 12\n        Factoring T^12 - 4*T^11 + 2*T^10 + 13*T^8 - 16*T^7 - 36*T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 13 over a field of degree 2 * 12\u2026\n        \u2026factors with degrees [4, 4, 1, 1, 1, 1]\n        Found totally ramified part of degree 4\n        Factoring T^12 - 4*T^11 + 2*T^10 + 13*T^8 - 16*T^7 - 36*T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 13 over a field of degree 2 * 48\u2026\n        \u2026factors with degrees [4, 1, 1, 1, 1, 1, 1, 1, 1]\n        Found totally ramified part of degree 4\n        Factoring T^12 - 4*T^11 + 2*T^10 + 13*T^8 - 16*T^7 - 36*T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 13 over a field of degree 2 * 192\u2026\n        \u2026factors with degrees [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]\n\n    \"\"\"\n    K = QQ.henselization(2)\n    R = PolynomialRing(K, 'T')\n    T = R.gen()\n    f = T**12 - 4*T**11 + 2*T**10 + 13*T**8 - 16*T**7 - 36*T**6 + 168*T**5 - 209*T**4 + 52*T**3 + 26*T**2 + 8*T - 13\n    splitting_field(f)\n", 
         "goal_time": 2.0, 

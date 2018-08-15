@@ -1,0 +1,158 @@
+{
+    "benchmarks": {
+        "henselizations.Rational.time_create": {
+            "code": "def time_create(self):\n    r\"\"\"\n    TESTS::\n\n        sage: import henselization\n        sage: from henselization.benchmarks.henselizations import Rational\n        sage: Rational().time_create()\n\n    \"\"\"\n    QQ.henselization(2)\n", 
+            "goal_time": 2.0, 
+            "name": "henselizations.Rational.time_create", 
+            "number": 0, 
+            "param_names": [], 
+            "params": [], 
+            "pretty_name": "henselizations.Rational.time_create", 
+            "repeat": 0, 
+            "timeout": 60.0, 
+            "type": "time", 
+            "unit": "seconds"
+        }, 
+        "splitting_fields.SplittingField.time_10_": {
+            "code": "def time_10_(self):\n    r\"\"\"\n    TESTS::\n\n        sage: import henselization\n        sage: from henselization.benchmarks.splitting_fields import SplittingField\n        sage: SplittingField().time_6_8()\n        Factoring T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 14 over a field of degree 1 * 1\u2026\n        \u2026factors with degrees [4, 1, 1]\n        Found totally ramified part of degree 4\n        Factoring T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 14 over a field of degree 1 * 4\u2026\n        \u2026factors with degrees [2, 1, 1, 1, 1]\n        Found totally ramified part of degree 2\n        Factoring T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 14 over a field of degree 1 * 8\u2026\n        \u2026factors with degrees [1, 1, 1, 1, 1, 1]\n\n    \"\"\"\n    K = QQ.henselization(2)\n    R = PolynomialRing(K, 'T')\n    T = R.gen()\n    f = T**10 + T**6 + 168*T**5 - 209*T**4 + 52*T**3 + 26*T**2 + 8*T - 14\n    splitting_field(f)\n", 
+            "goal_time": 2.0, 
+            "name": "splitting_fields.SplittingField.time_10_", 
+            "number": 0, 
+            "param_names": [], 
+            "params": [], 
+            "pretty_name": "splitting_fields.SplittingField.time_10_", 
+            "repeat": 0, 
+            "timeout": 1800, 
+            "type": "time", 
+            "unit": "seconds"
+        }, 
+        "splitting_fields.SplittingField.time_12_384": {
+            "code": "def time_12_384(self):\n    r\"\"\"\n    TESTS::\n\n        sage: import henselization\n        sage: from henselization.benchmarks.splitting_fields import SplittingField\n        sage: SplittingField().time_12_384() # long time\n        Factoring T^12 - 4*T^11 + 2*T^10 + 13*T^8 - 16*T^7 - 36*T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 13 over a field of degree 1 * 1\u2026\n        \u2026factors with degrees [12]\n        Found totally ramified part of degree 12\n        Factoring T^12 - 4*T^11 + 2*T^10 + 13*T^8 - 16*T^7 - 36*T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 13 over a field of degree 1 * 12\u2026\n        \u2026factors with degrees [8, 2, 1, 1]\n        Found unramified part of degree 2\n        Factoring T^12 - 4*T^11 + 2*T^10 + 13*T^8 - 16*T^7 - 36*T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 13 over a field of degree 2 * 1\u2026\n        \u2026factors with degrees [12]\n        Found totally ramified part of degree 12\n        Factoring T^12 - 4*T^11 + 2*T^10 + 13*T^8 - 16*T^7 - 36*T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 13 over a field of degree 2 * 12\u2026\n        \u2026factors with degrees [4, 4, 1, 1, 1, 1]\n        Found totally ramified part of degree 4\n        Factoring T^12 - 4*T^11 + 2*T^10 + 13*T^8 - 16*T^7 - 36*T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 13 over a field of degree 2 * 48\u2026\n        \u2026factors with degrees [4, 1, 1, 1, 1, 1, 1, 1, 1]\n        Found totally ramified part of degree 4\n        Factoring T^12 - 4*T^11 + 2*T^10 + 13*T^8 - 16*T^7 - 36*T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 13 over a field of degree 2 * 192\u2026\n        \u2026factors with degrees [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]\n\n    \"\"\"\n    K = QQ.henselization(2)\n    R = PolynomialRing(K, 'T')\n    T = R.gen()\n    f = T**12 - 4*T**11 + 2*T**10 + 13*T**8 - 16*T**7 - 36*T**6 + 168*T**5 - 209*T**4 + 52*T**3 + 26*T**2 + 8*T - 13\n    splitting_field(f)\n", 
+            "goal_time": 2.0, 
+            "name": "splitting_fields.SplittingField.time_12_384", 
+            "number": 0, 
+            "param_names": [], 
+            "params": [], 
+            "pretty_name": "splitting_fields.SplittingField.time_12_384", 
+            "repeat": 0, 
+            "timeout": 1800, 
+            "type": "time", 
+            "unit": "seconds"
+        }, 
+        "splitting_fields.SplittingField.time_6_8": {
+            "code": "def time_6_8(self):\n    r\"\"\"\n    TESTS::\n\n        sage: import henselization\n        sage: from henselization.benchmarks.splitting_fields import SplittingField\n        sage: SplittingField().time_6_8()\n        Factoring T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 14 over a field of degree 1 * 1\u2026\n        \u2026factors with degrees [4, 1, 1]\n        Found totally ramified part of degree 4\n        Factoring T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 14 over a field of degree 1 * 4\u2026\n        \u2026factors with degrees [2, 1, 1, 1, 1]\n        Found totally ramified part of degree 2\n        Factoring T^6 + 168*T^5 - 209*T^4 + 52*T^3 + 26*T^2 + 8*T - 14 over a field of degree 1 * 8\u2026\n        \u2026factors with degrees [1, 1, 1, 1, 1, 1]\n\n    \"\"\"\n    K = QQ.henselization(2)\n    R = PolynomialRing(K, 'T')\n    T = R.gen()\n    f = T**6 + 168*T**5 - 209*T**4 + 52*T**3 + 26*T**2 + 8*T - 14\n    splitting_field(f)\n", 
+            "goal_time": 2.0, 
+            "name": "splitting_fields.SplittingField.time_6_8", 
+            "number": 0, 
+            "param_names": [], 
+            "params": [], 
+            "pretty_name": "splitting_fields.SplittingField.time_6_8", 
+            "repeat": 0, 
+            "timeout": 1800, 
+            "type": "time", 
+            "unit": "seconds"
+        }
+    }, 
+    "graph_param_list": [
+        {
+            "arch": "x86_64", 
+            "branch": "master", 
+            "cpu": "Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz or similar", 
+            "machine": "CircleCI", 
+            "os": "Linux", 
+            "python": "2.7", 
+            "ram": "61830880"
+        }
+    ], 
+    "hash_length": 8, 
+    "machines": {
+        "CircleCI": {
+            "arch": "x86_64", 
+            "cpu": "Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz or similar", 
+            "machine": "CircleCI", 
+            "os": "Linux", 
+            "ram": "61830880", 
+            "version": 1
+        }
+    }, 
+    "pages": [
+        [
+            "", 
+            "Grid view", 
+            "Display as a agrid"
+        ], 
+        [
+            "summarylist", 
+            "List view", 
+            "Display as a list"
+        ], 
+        [
+            "regressions", 
+            "Show regressions", 
+            "Display information about recent regressions"
+        ]
+    ], 
+    "params": {
+        "arch": [
+            "x86_64"
+        ], 
+        "branch": [
+            "master"
+        ], 
+        "cpu": [
+            "Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz or similar"
+        ], 
+        "machine": [
+            "CircleCI"
+        ], 
+        "os": [
+            "Linux"
+        ], 
+        "python": [
+            "2.7"
+        ], 
+        "ram": [
+            "61830880"
+        ]
+    }, 
+    "project": "henselization", 
+    "project_url": "https://github.com/MCLF/henselization", 
+    "revision_to_date": {
+        "114": 1527608887000, 
+        "123": 1527768991000, 
+        "125": 1527776755000, 
+        "127": 1527780465000, 
+        "129": 1527782554000, 
+        "131": 1527783956000, 
+        "133": 1527788822000, 
+        "136": 1527789228000, 
+        "137": 1527792526000, 
+        "138": 1527792582000, 
+        "140": 1527934452000, 
+        "142": 1527979756000, 
+        "143": 1531403086000, 
+        "146": 1532515479000, 
+        "153": 1532619441000, 
+        "155": 1534365690000
+    }, 
+    "revision_to_hash": {
+        "114": "a9e50068ff91cdb248f7ff67ee5b6a3eecfb2cd2", 
+        "123": "857ecb6aa19e223275ca0f57b935e78b09ce0942", 
+        "125": "83ca9a55228ee52befbcf1fa2bed1b033f7985eb", 
+        "127": "5c938a0eec0026fb3e9f27508ce402762fba38af", 
+        "129": "7e2f3413da839f87394a4b822b0711d15a0bb2f8", 
+        "131": "5f6626ba71a9437f3af81e3663965ba96341c036", 
+        "133": "0e3a68d8cfd349d37ac9c8668e931e12a98ce52c", 
+        "136": "4901d636105ed79cbf13eac1b86abae76f3d2af4", 
+        "137": "4de69a78a67df50c135e9a0f37db818867a72b38", 
+        "138": "91052233cadc6f9fd3f0a59a02c807d1b5cb814f", 
+        "140": "a784c9c0f4ad0658ac74dc14f965ac96449258c8", 
+        "142": "967d732a37dac8821fb8f2518e07d9e6f4c39243", 
+        "143": "fcea4491e0e9cd49522736eafc3aa97d55613cf7", 
+        "146": "da57065aca3ee18a64c114b5a3e5b0f3978a4491", 
+        "153": "5f4819cb978ab3860dbe1d218a3c130b27ee4244", 
+        "155": "be9f7f279bfea05e425bdef9138a018e860ab488"
+    }, 
+    "show_commit_url": "#", 
+    "tags": {}
+}

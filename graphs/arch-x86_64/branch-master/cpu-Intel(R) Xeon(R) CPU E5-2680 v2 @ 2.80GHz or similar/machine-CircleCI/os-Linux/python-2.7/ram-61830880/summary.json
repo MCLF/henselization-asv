@@ -1,0 +1,42 @@
+[
+    {
+        "change_rev": null, 
+        "idx": null, 
+        "last_err": 1.8990847599999955e-06, 
+        "last_rev": 155, 
+        "last_value": 3.855852449999997e-05, 
+        "name": "henselizations.Rational.time_create", 
+        "pretty_name": "henselizations.Rational.time_create", 
+        "prev_value": null
+    }, 
+    {
+        "change_rev": null, 
+        "idx": null, 
+        "last_err": 1.757180396333344, 
+        "last_rev": 155, 
+        "last_value": 129.82492668900002, 
+        "name": "splitting_fields.SplittingField.time_10_", 
+        "pretty_name": "splitting_fields.SplittingField.time_10_", 
+        "prev_value": null
+    }, 
+    {
+        "change_rev": null, 
+        "idx": null, 
+        "last_err": 9.7534078788, 
+        "last_rev": 155, 
+        "last_value": 1504.0093909065, 
+        "name": "splitting_fields.SplittingField.time_12_384", 
+        "pretty_name": "splitting_fields.SplittingField.time_12_384", 
+        "prev_value": null
+    }, 
+    {
+        "change_rev": null, 
+        "idx": null, 
+        "last_err": 0.09488944800000006, 
+        "last_rev": 155, 
+        "last_value": 0.735535837, 
+        "name": "splitting_fields.SplittingField.time_6_8", 
+        "pretty_name": "splitting_fields.SplittingField.time_6_8", 
+        "prev_value": null
+    }
+]

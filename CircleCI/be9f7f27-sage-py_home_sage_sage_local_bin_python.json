@@ -2,10 +2,10 @@
     "commit_hash": "be9f7f279bfea05e425bdef9138a018e860ab488", 
     "date": 1534365690000, 
     "ended_at": {
-        "henselizations.Rational.time_create": 1534366062000, 
-        "splitting_fields.SplittingField.time_10_": 1534366195000, 
-        "splitting_fields.SplittingField.time_12_384": 1534367706000, 
-        "splitting_fields.SplittingField.time_6_8": 1534367711000
+        "henselizations.Rational.time_create": 1534367740000, 
+        "splitting_fields.SplittingField.time_10_": 1534367876000, 
+        "splitting_fields.SplittingField.time_12_384": 1534369398000, 
+        "splitting_fields.SplittingField.time_6_8": 1534369404000
     }, 
     "env_name": "sage-py_home_sage_sage_local_bin_python", 
     "params": {
@@ -20,16 +20,16 @@
     "python": "2.7", 
     "requirements": {}, 
     "results": {
-        "henselizations.Rational.time_create": 3.92482572e-05, 
-        "splitting_fields.SplittingField.time_10_": 130.04059220099998, 
-        "splitting_fields.SplittingField.time_12_384": 1507.440683209, 
-        "splitting_fields.SplittingField.time_6_8": 0.6966850780000002
+        "henselizations.Rational.time_create": 3.93408043e-05, 
+        "splitting_fields.SplittingField.time_10_": 134.20906928300002, 
+        "splitting_fields.SplittingField.time_12_384": 1519.3395996680001, 
+        "splitting_fields.SplittingField.time_6_8": 0.7389447239999996
     }, 
     "started_at": {
-        "henselizations.Rational.time_create": 1534366059000, 
-        "splitting_fields.SplittingField.time_10_": 1534366062000, 
-        "splitting_fields.SplittingField.time_12_384": 1534366195000, 
-        "splitting_fields.SplittingField.time_6_8": 1534367706000
+        "henselizations.Rational.time_create": 1534367737000, 
+        "splitting_fields.SplittingField.time_10_": 1534367740000, 
+        "splitting_fields.SplittingField.time_12_384": 1534367876000, 
+        "splitting_fields.SplittingField.time_6_8": 1534369398000
     }, 
     "version": 1
 }
